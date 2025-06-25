@@ -1,0 +1,340 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital@1&display=swap');
+
+:root {
+  --section-gap: 7rem;
+}
+
+body.hdn-scroll {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.main-swiper {
+  height: 61.8rem;
+  background-color: #000;
+  margin-top: 4rem;
+  margin-bottom: var(--section-gap);
+  border-radius: 3rem;
+  color: #fff;
+}
+
+.main-swiper .main-swiper-slide {
+  height: 100%;
+  display: flex
+}
+
+.main-swiper .text-box {
+  flex-grow: 1;
+  height: 100%;
+  padding: 7.6rem;
+  background-color: #004071;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.main-swiper .text-box h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.main-swiper .text-box .link {
+  border-radius: 1rem;
+  border: solid 1px rgba(255, 255, 255, .5);
+  padding: 1rem 2.4rem;
+  font-size: .9em;
+  font-weight: 400;
+  margin-top: 2rem;
+  color: #fff;
+  background-color: transparent;
+  transition: all .3s;
+  display: inline-block;
+}
+
+.main-swiper .text-box .link:hover,
+.main-swiper .text-box .link:focus {
+  background-color: #fff;
+  color: #004071;
+  border-color: #fff;
+}
+
+.main-swiper .visual {
+  flex-grow: 1.5;
+  height: 100%;
+}
+
+.main-swiper .visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-swiper .controller {
+  position: absolute;
+  bottom: 7.6rem;
+  left: 7.6rem;
+  z-index: 2;
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 1280px) {
+  .main-swiper .text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    /* background-color: transparent; */
+    background: linear-gradient(to top, rgb(15 32 45), rgba(0, 0, 0, 0));
+  }
+
+  .main-swiper .visual {
+    width: 100%;
+    flex-grow: 1;
+  }
+}
+
+.notice-section {
+  margin-bottom: var(--section-gap);
+}
+
+.notice-section .tab-links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.notice-section .tab-links a {
+  border-radius: 5rem;
+  padding: 1rem 2.4rem;
+  font-size: .9em;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+  transition: all .3s;
+  display: inline-block;
+  border: solid 1px var(--color-border);
+}
+
+
+
+.notice-section .tab-links a.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.notice-section .tab-links a:hover,
+.notice-section .tab-links a:focus {
+  background-color: #000;
+  color: #fff;
+}
+
+.notice-section ul {
+  display: flex;
+  align-items: stretch;
+  padding-top: 1rem;
+}
+
+.notice-section .swiper-slide {
+  height: auto;
+}
+
+.notice-section .swiper-slide>li {
+  height: 100%;
+}
+
+.notice-section .swiper-slide a {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 1rem;
+  border: solid 1px var(--color-border);
+  padding: 2rem;
+  transition: all .3s ease-in-out 0s;
+}
+
+.notice-section .swiper-slide a:hover,
+.notice-section .swiper-slide a:focus {
+  transform: translateY(-.5rem);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+.notice-section .swiper-slide a .subj {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  height: 2.4em;
+  overflow: hidden;
+}
+
+.notice-section .swiper-slide a .content {
+  height: 4.8em;
+  line-height: 1.2;
+  overflow: hidden;
+}
+
+.notice-section .swiper-slide a .date {
+  font-size: .9em;
+  color: #666;
+}
+
+.quickLinks-section {
+  margin-bottom: var(--section-gap);
+}
+
+.quickLinks-section ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.quickLinks-section ul li {
+  width: 33.33333333333333%;
+  height: auto;
+  display: flex;
+  width: 100%;
+}
+
+.quickLinks-section ul li a {
+  border-radius: 1.2rem;
+  background-color: #F7F7F7;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.quickLinks-section ul li a .subj {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.quickLinks-section ul li a .bottom-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.quickLinks-section ul li a .bottom-box .link {
+  border-radius: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 1rem;
+  font-size: .9em;
+  font-weight: 400;
+  color: #fff;
+  background-color: #BFBFBF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease-in-out 0s;
+}
+
+.quickLinks-section ul li a:hover .bottom-box .link {
+  background-color: #000;
+}
+
+@media (max-width: 1124px) {
+  .quickLinks-section ul {
+    flex-wrap: wrap;
+  }
+
+  .quickLinks-section ul li {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .quickLinks-section br {
+    display: none;
+  }
+
+  .quickLinks-section ul {
+    flex-direction: column;
+  }
+
+  .quickLinks-section ul li {
+    width: 100%;
+  }
+}
+
+
+/* banner-section */
+
+.banner-section {
+  margin-bottom: var(--section-gap);
+  font-weight: 700;
+}
+
+.banner-section .banner-swiper {
+  flex-grow: 1;
+}
+
+.banner-section .banner-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.banner-section .banner-container .header-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.banner-section .banner-container .header-box .controller {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: inherit;
+}
+
+.banner-section .banner-container .swiper-slide a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-section .banner-container .swiper-slide i {
+  font-size: 2.4rem;
+}
+
+.swiper-button-lock {
+  display: block;
+  opacity: .3;
+}
+
+@media (max-width: 768px) {
+  .banner-section .banner-container {
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: row-reverse
+  }
+
+  .banner-section .banner-container .header-box {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .banner-section .banner-container .header-box .tit {
+    display: none;
+  }
+}
