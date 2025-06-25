@@ -50,6 +50,8 @@
   gap: 2rem;
   font-size: 1.4rem;
   font-weight: 700;
+  border-bottom: solid 1px var(--color-border);
+  padding-bottom: 2rem;
 }
 
 .side-quick-menu ul a {
@@ -61,10 +63,48 @@
   line-height: 1.1;
 }
 
+.side-quick-menu ul a:hover {
+  position: relative;
+}
+
+.side-quick-menu ul a:hover::after {
+  content: "";
+  position: absolute;
+  top: .5rem;
+  left: 30%;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: rgba(236 141 27 /.3);
+  transform: translate(-50%, -50%);
+  animation: scale 1s ease-in-out infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  35% {
+    transform: scale(1.5);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .side-quick-menu .topBtn {
   width: 100%;
-  border-top: solid 1px var(--color-border);
-  padding: 2rem 0 0;
+  transition: all .3s ease-out 0s;
+}
+
+.side-quick-menu .topBtn:hover {
+  transform: translateY(-1rem);
 }
 
 .side-quick-menu .topBtn i {
@@ -114,6 +154,10 @@
     border-top: none;
     padding: 0;
     height: 100%;
+  }
+
+  .side-quick-menu .topBtn:hover {
+    transform: none;
   }
 
   .side-quick-menu .topBtn i {
@@ -179,7 +223,9 @@
   position: relative;
   text-align: center;
   border-right: solid 1px var(--color-border);
-  border-top: solid 1px var(--color-border)
+  border-top: solid 1px var(--color-border);
+  transition: all .3s ease 0s;
+
 }
 
 .lnb a:focus {
@@ -463,6 +509,10 @@
   background-color: #fff !important;
   color: #404040;
   border-top: solid 1px var(--color-border);
+}
+
+.footer-bottom {
+  background-image: url(../images/logo.svg);
 }
 
 .footer-bottom ul {

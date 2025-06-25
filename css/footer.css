@@ -15,6 +15,17 @@
   padding-bottom: 3rem;
 }
 
+.footer-top a {
+  padding: .5rem 1rem;
+  border-radius: .4rem;
+  transition: all .3s ease 0s;
+}
+
+.footer .footer-top a:hover {
+  background-color: rgba(236 141 27 /1);
+  color: #fff !important;
+}
+
 .footer-bottom {
   background: url(../images/logo_bottom.svg) no-repeat 100% center / cover;
   background-size: 252px;
@@ -57,7 +68,7 @@
 
   .footer-top a {
     padding: 1rem;
-    border-bottom: dashed 1px var(--color-border);
+    border-bottom: dashed 1px rgba(0, 0, 0, .2);
     text-align: center;
   }
 
