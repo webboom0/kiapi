@@ -157,6 +157,14 @@
   .header .logo a {
     width: 18rem;
   }
+
+  .header .etcMenu>a:not(.sideMenuBtn) {
+    display: none;
+  }
+
+  .sideMenuOpen .etcMenu>a:not(.sideMenuOpen) {
+    display: block;
+  }
 }
 
 @media (max-width:430px) {
