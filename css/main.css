@@ -15,7 +15,7 @@ body.hdn-scroll {
   background-color: #000;
   margin-top: 4rem;
   margin-bottom: var(--section-gap);
-  border-radius: 1rem;
+  border-radius: 3rem;
   color: #fff;
 }
 
@@ -25,15 +25,13 @@ body.hdn-scroll {
 }
 
 .main-swiper .text-box {
-  /* flex-grow: 1; */
-  height: 100%;
   padding: 4.5rem 6.6rem 7.6rem;
-  background-color: #004071;
   font-weight: 100;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* gap: 3rem; */
+  position: relative;
+  z-index: 2;
 }
 
 .main-swiper .text-box h2 {
@@ -66,7 +64,10 @@ body.hdn-scroll {
 }
 
 .main-swiper .visual {
-  flex-grow: 1.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
 }
 
@@ -79,7 +80,6 @@ body.hdn-scroll {
 .main-swiper-slide {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .main-swiper .controller {
