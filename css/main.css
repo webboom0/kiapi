@@ -84,7 +84,7 @@ body.hdn-scroll {
 .main-swiper .controller {
   position: absolute;
   bottom: 3.6rem;
-  left: 7.6rem;
+  left: 4.5rem;
   z-index: 2;
   display: flex;
   gap: 1rem;
