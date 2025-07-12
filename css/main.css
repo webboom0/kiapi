@@ -25,7 +25,7 @@ body.hdn-scroll {
 }
 
 .main-swiper .text-box {
-  padding: 4.5rem 6.6rem 7.6rem;
+  padding: 6rem 4.5rem 7.6rem;
   font-weight: 100;
   display: flex;
   flex-direction: column;
@@ -79,7 +79,6 @@ body.hdn-scroll {
 
 .main-swiper-slide {
   display: flex;
-  align-items: center;
 }
 
 .main-swiper .controller {
@@ -91,6 +90,18 @@ body.hdn-scroll {
   gap: 1rem;
 }
 
+.main-swiper .comment{
+  display: none;
+}
+
+@media (max-width: 1480px) {
+  .main-swiper img{
+    display: none;
+  }
+  .main-swiper .comment{
+    display: block;
+  }
+}
 @media (max-width: 1280px) {
   .main-swiper .text-box {
     position: absolute;
@@ -107,12 +118,7 @@ body.hdn-scroll {
     width: 100%;
     flex-grow: 1;
   }
-}
 
-@media (max-width: 780px) {
-  .main-swiper .comment {
-    display: none;
-  }
 }
 
 .notice-section {
